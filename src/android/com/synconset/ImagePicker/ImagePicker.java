@@ -112,6 +112,7 @@ public class ImagePicker extends CordovaPlugin {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             permissions.add(Manifest.permission.READ_MEDIA_IMAGES);
             permissions.add(Manifest.permission.READ_MEDIA_VIDEO);
+            permissions.add(Manifest.permission.READ_MEDIA_AUDIO);
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             permissions.add(Manifest.permission.READ_EXTERNAL_STORAGE);
         }
